@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&family=Lora&family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Open+Sans:wght@300;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Questrial&family=Ubuntu:wght@500&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+}
+
+h2{
+    font-family:'Playfair Display', serif;
+    text-transform:capitalize;
+}
+
+h4{
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.container{
+    margin:2% 10%;    
+}
+
+img{
+    width:100%;
+    height:auto;
+}
+
+.recipe-prep{
+    position:absolute;
+    right:10%;
+    height:400px;
+    width:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:5px;
+    box-shadow:5px 5px 20px rgba(224, 220, 220, 0.9);
+    margin-top:4rem;
+}
+
+p{
+    max-width:60%;
+    font-family: 'Montserrat';
+    max-width: 60rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+
+span{
+    padding:5px 10px;
+    color:#fff;
+    background-color:orange;
+    border-radius:5px;
+}
+
+.instructions-content {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin:20px 0;
+    width:50%;
+}
+
+.instructions-content p{
+    margin:0 10px;
+}
+
+h5{
+    text-transform:uppercase;
+    color:rgb(157, 147, 147);
+    margin:0 auto;
+}
+
+.time-description{
+    width:70%;
+    display:flex; 
+    margin:20px;   
+}
+
+.description{
+    margin-left:50px;
+}
+
+ion-icon{
+    position:relative;
+    left:30px;
+    height:100%;
+    width:20%;
+}
+
+.description p{
+    margin:0;
+}
+
+.active{
+    color:orange;
+}
+
+.blank{
+    background-color:#fff;
+}
+
+.dots{
+    display:inline;
+    height:20px;
+    width:20px;
+
+}
+
+.text{
+    position:relative;
+    left:30px;
+    bottom:40px;
+    width:50%;
+}
+
+footer{
+    text-align:center;
+    color:grey;
+    margin-top:100px;
+}
+
+.cheesecake form p{
+    max-width:60%;
+    position:relative;
+    left:20px;
+    bottom:40px;
+}
+/* -------------------------------------Mobile Version-------------------------------------- */
+@media only screen and (max-width:768px){
+
+    body{
+        margin:20px;
+        width:100%;
+    }
+
+    .recipe-prep{
+        position: relative;
+        left:0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height:auto;
+        justify-content: flex-start;
+        box-shadow: none;
+        
+    }
+
+    .time-description {
+        width:30%;
+        margin:20px 0;
+    }
+
+    .description{
+        margin:0 10px;
+    }
+
+    ion-icon {
+        position: relative;
+        left: 0;
+        height: 2.5rem;
+        width: 2rem;
+    }
+
+    .yield{
+        width:100%;
+
+    }
+
+    .yield ion-icon{
+        width:3rem;
+    }
+
+    p{
+        width:100%;
+    }
+
+    .instructions-content{
+        width:100%;
+    }
+
+    .cheesecake form p{
+        max-width:100%;
+    }
+
+    .text{
+        width:100%;
+    }
+
+}
